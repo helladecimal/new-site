@@ -92,12 +92,30 @@ body { background-color: var(--bg);}
     font-size: 20px;
 }
 
+.folder {
+    background-color: transparent;
+    color: var(--text);
+    border: 0;
+    font-size: 15px;
+    padding: 0;
+    cursor: pointer;
+}
+
 .spacer {
     visibility: hidden;
 }
 
 .subitem {
-    display: none;
+    display: auto;
+}
+
+.subitem > span {
+    margin-left: 1.5ch;
+}
+
+.context {
+    text-decoration: underline;
+    cursor: help;
 }
 
 p, h1, h2, h3, div, a, ul{
