@@ -26,37 +26,13 @@ body { background-color: var(--bg);}
     row-gap: 20px;
 }
 
-@media screen and (max-width: 600px){
-    .container {
-        grid-template-columns: 100%;
-        align-content: center;
-        grid-template-areas: 
-        "title"
-        "side"
-        "main";
-    }
-}
-
-.h {
-    font-size: 20px;
-}
-
-.spacer {
-    visibility: hidden;
-}
-
-p, h1, h2, h3, div {
-    font-family: Krypton;
-    font-weight: normal;
-    color: var(--text)
-}
-
-div {
-    font-size: 18px;
-}
-
 .titlebar {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 10px;
+    font-size: 1.25vw;
     grid-area: title;
+    align-items: center;
 }
 
 .sidebar {
@@ -68,10 +44,53 @@ div {
     padding: 30px;
 }
 
+@media screen and (max-width: 600px){
+    .container {
+        grid-template-columns: 100%;
+        align-content: center;
+        grid-template-areas: 
+        "title"
+        "side"
+        "main";
+    }
+
+    .titlebar {
+        font-size: 3vw;
+    }
+}
+
+.h {
+    font-size: 20px;
+}
+
+.spacer {
+    visibility: hidden;
+}
+
+p, h1, h2, h3, div{
+    font-family: Krypton;
+    font-weight: normal;
+    color: var(--text)
+}
+
+hr {
+    border-color: var(--text);
+    border-style: dashed;
+}
+
+div {
+    font-size: 18px;
+}
+
 .box { 
     border-top: 5px solid var(--fg);
     background-color: var(--fg2);
     padding: 1rem;
+}
+
+.box > img {
+    padding: 0;
+    border: 5px solid var(--fg);
 }
 
 .center {
