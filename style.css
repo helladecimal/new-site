@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: Krypton;
-    src: url(Agave-Regular.ttf);
+    src: url(fonts/Agave-Regular.ttf);
 }
 
 body { background-color: var(--bg);}
