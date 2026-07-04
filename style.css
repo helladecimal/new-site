@@ -36,6 +36,12 @@ body { background-color: var(--bg);}
     row-gap: 20px;
 }
 
+iframe {
+    height: 100%; 
+    width: 100%;
+    overflow: hidden;
+}
+
 .box { 
     border-top: 5px solid var(--fg);
     background-color: var(--fg2);
@@ -84,6 +90,10 @@ body { background-color: var(--bg);}
     opacity: 0.35;
 }
 
+iframe {
+    border: 0;
+}
+
 .main{
     padding: 2rem;
     font-size: 18px;
@@ -112,6 +122,11 @@ body { background-color: var(--bg);}
 
     .code {
         font-size: 10px;
+    }
+
+    iframe {
+        height: 20ch;
+        width: 100%;
     }
 }
 
