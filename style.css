@@ -67,7 +67,7 @@ iframe {
     grid-area: main;
 }
 
-#hobbies {
+.hobbies {
     grid-area: hobbies;
 }
 
