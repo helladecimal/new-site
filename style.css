@@ -101,11 +101,13 @@ body { background-color: var(--bg);}
     opacity: 0;
     position: absolute;
     left: -100vw;
+    
     /* hacky hacky*/
 }
 
 .folder ~ label:hover{
     cursor: pointer;
+    user-select: none;
 }
 
 .folder:checked ~ .subitem{
