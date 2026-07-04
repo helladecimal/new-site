@@ -69,6 +69,14 @@ body { background-color: var(--bg);}
     grid-area: buttons;
 }
 
+.code {
+    border: 5px solid var(--fg);
+    background-color: var(--bg);
+    white-space-collapse: preserve;
+    font-size: 0.6vw;
+    padding: 1rem;
+}
+
 .footer {
     grid-area: footer;
     padding: 0.5rem;
@@ -100,6 +108,10 @@ body { background-color: var(--bg);}
 
     .sidebar {
         font-size: 15px;
+    }
+
+    .code {
+        font-size: 10px;
     }
 }
 
