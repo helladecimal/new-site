@@ -27,8 +27,7 @@ body { background-color: var(--bg);}
     
     grid-template-areas: 
     ". . title ."
-    ". side box1 ."
-    ". side box2 ."
+    ". side main ."
     ". footer footer ."
     ". buttons buttons .";
     
@@ -66,7 +65,13 @@ iframe {
     font-size: 1vw; 
 }
 
+.content {
+    grid-area: main;
+    display: grid;
+    row-gap: 20px;
+}
 
+/*
 .box1 {
     grid-area: box1;
 }
@@ -74,7 +79,7 @@ iframe {
 .box2 {
     grid-area: box2;
 }
-
+*/
 
 
 #buttonrow {
@@ -112,10 +117,7 @@ iframe {
         grid-template-areas: 
         "title"
         "side"
-        "box1"
-        "box2"
-        "box3"
-        "box4"
+        "main"
         "footer"
         "buttons";
     }
