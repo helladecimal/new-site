@@ -176,6 +176,22 @@ iframe {
     /* hacky hacky*/
 }
 
+.folder > div{
+    padding-left: .5ch;
+    
+}
+
+.folder > .folder > div{
+    padding-left: 2.5ch;
+    
+}
+
+.pipe{
+    position: absolute;
+    padding-left: 0ch;
+}
+
+
 .folder ~ label:hover{
     cursor: pointer;
     user-select: none;

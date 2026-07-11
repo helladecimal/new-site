@@ -61,14 +61,16 @@ items.forEach(function(item){
         parent = parent.parentElement;
     }
 
-    console.log(depth, item.innerText)
-
     if (depth > 0){
-
         for (let i=depth; i > 0; i--){ 
             let localPipe = pipe.cloneNode(true);
+
+            if (item.parentElement === item.parentElement.parentElement.lastElementChild && i > 1 ){
+                localPipe.style.visibility = "hidden";
+            }
+
             item.prepend(localPipe);
-            localPipe.style.right = (2.5*i) + "ch";
+            localPipe.style.right = 2.5*(depth/i) + "ch"; // OH MY GODDDD FINALLY
         };
     };
 });
