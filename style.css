@@ -162,37 +162,53 @@ iframe {
 }
 
 .folder {
+
     background-color: transparent;
     color: var(--text);
+    /*
     border: 0;
     font-size: 15px;
     padding: 0;
     opacity: 0;
     position: absolute;
     left: -100vw;
-    
+    */
     /* hacky hacky*/
 }
 
-.folder ~ label:hover{
+.folder > div{
+    padding-left: .5ch;
+    
+}
+
+.folder > .folder > div{
+    padding-left: 2.5ch;
+    
+}
+
+.pipe{
+    position: absolute;
+    padding-left: 0ch;
+}
+
+
+.fold-icon:hover{
     cursor: pointer;
     user-select: none;
 }
 
-.folder:checked ~ .subitem{
-    display:flex;
-}
 
 .spacer {
     visibility: hidden;
 }
 
-.subitem {
-    display: none;
-}
+/*.subitem {
+    display: in;
+}*/
 
-.subitem > span {
-    margin-left: 2.5ch;
+
+.pipe {
+    position: relative;
 }
 
 .context {
